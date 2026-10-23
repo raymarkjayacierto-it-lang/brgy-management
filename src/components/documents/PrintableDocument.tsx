@@ -1,9 +1,9 @@
 import React from 'react';
 import { DocumentRequest } from '../../types/document';
 import { BarangaySettings } from '../../types/system';
-import { formatDate, formatCurrency } from '../../utils/formatters';
+import { formatCurrency } from '../../utils/formatters';
 import { generateQRCodeSVG } from '../../utils/qr';
-import { Printer, X } from 'lucide-react';
+import { Printer } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export interface PrintableDocumentProps {
@@ -60,7 +60,7 @@ export const PrintableDocument: React.FC<PrintableDocumentProps> = ({
           <img
             src="/logo.png"
             alt="Barangay Seal Watermark"
-            className="w-[420px] h-[420px] object-contain rounded-full"
+            className="w-105 h-105 object-contain rounded-full"
           />
         </div>
 
